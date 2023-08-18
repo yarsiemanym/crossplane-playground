@@ -1,0 +1,14 @@
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: BucketObject
+metadata:
+  name: hello-world
+spec:
+  forProvider:
+    region: us-east-1
+    bucketRef:
+      name: crossplane-test-fb97742a-a087-4d99-9310-9cab127ab631
+    key: hello-world.txt
+    content: Hello, world!
+  providerConfigRef:
+    name: aws
+    

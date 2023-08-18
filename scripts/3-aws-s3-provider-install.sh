@@ -1,0 +1,1 @@
+kubectl apply -f ../manifests/aws-s3-provider.yaml
